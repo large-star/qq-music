@@ -2,6 +2,8 @@ import axios from 'axios';
 
 export function http(config){
   const service = axios.create({
+    baseURL: 'https://netease-cloud-music-api-ten-mauve.vercel.app',
+    withCredentials: true
     // timeout: 5000,
   })
 
