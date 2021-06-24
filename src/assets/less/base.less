@@ -1,0 +1,37 @@
+
+@import './_variable.less';
+
+body, html{
+  line-height: 1;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background: @color-background;
+  color: @color-text;
+}
+
+.singer,.rank,.recommend,.search{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 88px;
+}
+
+// 两行文本溢出打点 ...
+.twoLinesEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+}
+
+// 单行文字打点
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
