@@ -15,8 +15,8 @@ export function login() {
   return http({
     url: urlHeader + '/login/cellphone',
     params: {
-      phone: '15907541151',
-      password: 'cjh123456'
+      phone: '',
+      password: ''
     }
   })
 }
